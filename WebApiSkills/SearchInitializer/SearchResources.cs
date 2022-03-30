@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Configuration;
 
-namespace JfkInitializer
+namespace SearchInitializer
 {
     static class SearchResources
     {
@@ -10,8 +10,8 @@ namespace JfkInitializer
             new SearchIndexerDataSourceConnection(
                 name: name,
                 type: SearchIndexerDataSourceType.AzureBlob,
-                connectionString: ConfigurationManager.AppSettings["JFKFilesBlobStorageAccountConnectionString"],
-                container: new SearchIndexerDataContainer(ConfigurationManager.AppSettings["JFKFilesBlobContainerName"]))
+                connectionString: ConfigurationManager.AppSettings["SearchFilesBlobStorageAccountConnectionString"],
+                container: new SearchIndexerDataContainer(ConfigurationManager.AppSettings["SearchFilesBlobContainerName"]))
             {
                 Description = "Data source for cognitive search example"
             };
@@ -297,7 +297,7 @@ namespace JfkInitializer
             })
             {
                 Name = name,
-                Description = "JFK Files Skillset",
+                Description = "Search Files Skillset",
                 CognitiveServicesAccount = new CognitiveServicesAccountKey(key: ConfigurationManager.AppSettings["CognitiveServicesAccountKey"])
             };
         }
@@ -350,7 +350,7 @@ namespace JfkInitializer
                 CorsOptions = new CorsOptions(allowedOrigins: new List<string>() { "*" }),
                 Suggesters = 
                 {
-                    new SearchSuggester(name: "sg-jfk", sourceFields: "entities")
+                    new SearchSuggester(name: "sg-Search", sourceFields: "entities")
                 }
             };
 

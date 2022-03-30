@@ -17,7 +17,7 @@ using Azure.Search.Documents.Models;
 using Azure.Storage.Blobs;
 using Azure.Storage.Blobs.Models;
 
-namespace JfkInitializer
+namespace Initializer
 {
     class Program
     {
@@ -32,7 +32,7 @@ namespace JfkInitializer
         // Set this to true to see additional debugging information in the console.
         private static bool DebugMode = false;
 
-        // Set this to true if you would like this app to deploy the JFK files frontend to your Azure site.
+        // Set this to true if you would like this app to deploy the Search files frontend to your Azure site.
         private static bool ShouldDeployWebsite = true;
 
         // Clients

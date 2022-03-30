@@ -7,8 +7,8 @@
     <ProjectGuid>{3D7A0B3E-F8B3-46F4-9E62-D31209562049}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>JfkInitializer</RootNamespace>
-    <AssemblyName>JfkInitializer</AssemblyName>
+    <RootNamespace>SearchInitializer</RootNamespace>
+    <AssemblyName>SearchInitializer</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

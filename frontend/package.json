@@ -1,7 +1,7 @@
 {
-  "name": "jfk-files",
+  "name": "search-files",
   "version": "1.0.0",
-  "description": "Azure Search Demo based on declassified JFK Files",
+  "description": "Azure Search Demo based on declassified Search Files",
   "main": "app.js",
   "config": {
     "build": "dist",
